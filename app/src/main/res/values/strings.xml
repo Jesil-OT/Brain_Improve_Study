@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brain Improve Study</string>
+    <string name="app_inbuilt_name">Jesil Brain Improment Study</string>
+    <string name="button_title">Start</string>
+    <string name="todo">TODO</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="sign_in">Login</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
