@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -45,10 +46,12 @@ public class SignInActvity extends AppCompatActivity {
             mTextInputEditTextEmailSigninPage.setError("Please enter an Email to proceed");
             mTextInputEditTextPasswordSigninPage.setError("Please enter a password");
         }
-        else if (passwordSignInput.length() >= 6){
-            mTextInputEditTextPasswordSigninPage.setError("Password must not be Less 6 Character");
-            mTextInputEditTextPasswordSigninPage.setError("Password must not be Greater 6 Character");
+        else if (passwordSignInput.length() <= 6){
+            mTextInputEditTextPasswordSigninPage.setError("Password Should contain at Least 6 Character");
         }
+       /* else if (TextUtils.isEmpty(emailSignInput) || TextUtils.isEmpty(passwordSignInput)){
+            Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+        }*/
 
         else {
             Intent intent = new Intent(SignInActvity.this,HomeActivity.class);
