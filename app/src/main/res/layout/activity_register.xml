@@ -20,6 +20,17 @@
             android:background="#FFFFFFFF"
             tools:context=".RegisterActivity">
 
+            <ProgressBar
+                android:id="@+id/progressBar_register"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/button_register2"
+                app:layout_constraintEnd_toEndOf="@+id/button_register2"
+                app:layout_constraintStart_toStartOf="@+id/button_register2"
+                app:layout_constraintTop_toTopOf="@+id/button_register2" />
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="0dp"
@@ -39,7 +50,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="Welcome to Jesil Brain Improve study"
+                android:text="Welcome to Jesil Brain Improvement study"
                 android:textAlignment="center"
                 android:textColor="#BE596E"
                 android:textSize="16sp"
@@ -77,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_person"
-                    android:drawablePadding="15dp"
+                    android:drawablePadding="10dp"
                     android:hint="Username"
                     android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -99,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email_black"
-                    android:drawablePadding="15dp"
+                    android:drawablePadding="10dp"
                     android:hint="Email"
                     android:inputType="textEmailAddress"/>
             </com.google.android.material.textfield.TextInputLayout>
